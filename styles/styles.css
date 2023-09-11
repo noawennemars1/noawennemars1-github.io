@@ -48,6 +48,20 @@ a{
   color: #000E3E;
 }
 
+a.link{
+    background: linear-gradient(#FFE6AC 0%, #FFE6AC 100%); 
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1em 0.3em;
+    color: #000;
+    text-decoration: none;
+}
+
+a.link:hover{
+    background-size: 1em 1.2em;    
+    transition: background-size .2s;
+}
+
 a.button{
     background-color:#FF873E;
     min-width: 7em;
@@ -92,9 +106,26 @@ section{
     padding: 1em 5vw;
 }
 
-iframe{
+iframe.video{
     width: 90vw;
     height: 23vh;
+}
+
+iframe.pdf{
+    width: 90vw;
+    height: 50vh;
+}
+
+img.custom-img{
+    border-radius: 10em 5em;
+    margin-bottom: 1em;
+    object-fit: cover;
+}
+
+img.custom-img-2{
+    border-radius: 5em 10em;
+    margin-bottom: 1em;
+    object-fit: cover;
 }
 
 /*nav css*/
@@ -120,6 +151,7 @@ nav{
 
 nav a img{
     max-width: 4em;
+    object-fit: cover;
 }
 
 nav ol{
@@ -153,7 +185,7 @@ body section:first-of-type> div> h2{
 body section:first-of-type > div{
     display: flex;
     width: 90vw;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 /*section 2, about me css*/
@@ -176,6 +208,7 @@ body section#aboutme span div > h4:last-of-type{
 
 body section#aboutme span img{
     max-width: 60vw;
+    object-fit: cover;
 }
 
 
@@ -207,10 +240,12 @@ body section#mywork a div{
 body section#mywork a div div img{
     max-width: 8vw;
     margin-right: 0.5em;
+    object-fit: cover;
 }
 
 body section#mywork img{
     max-width: 90vw;
+    object-fit: cover;
 }
 
 /*section 4, contact css*/
@@ -233,7 +268,7 @@ body section#contact div{
 
 
 /*rythm ritje section 1, intro sectie css*/
-body.rythmritje section:first-of-type{
+body.detail section:first-of-type{
     background: #9CE2ED;
     display: flex;
     justify-content: center;
@@ -242,22 +277,22 @@ body.rythmritje section:first-of-type{
     padding-bottom: 0;
 }
 
-body.rythmritje section:first-of-type > div:first-of-type{
+body.detail section:first-of-type > div:first-of-type{
     display: flex;
     align-items: center;
     margin-bottom: -1em;
 }
 
-body.rythmritje section:first-of-type > div:first-of-type > img{
+body.detail section:first-of-type > div:first-of-type > img{
     max-height: 5vh;
     margin-right: 1em;
 }
 
-body.rythmritje section:first-of-type > img{
+body.detail section:first-of-type > img{
     z-index: 2;
 }
 
-body.rythmritje section:first-of-type > div:last-of-type{
+body.detail section:first-of-type > div:last-of-type{
     display: flex;
     flex-direction: column;
     background-color: #B3C885;
@@ -266,73 +301,91 @@ body.rythmritje section:first-of-type > div:last-of-type{
     padding: 5em 5vw 1em 5vw;
 }
 
-body.rythmritje section:first-of-type div:last-of-type div:last-of-type{
+body.detail section:first-of-type div:last-of-type div:last-of-type{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-body.rythmritje section:first-of-type div:last-of-type div img, 
-body.rythmritje section.process > div:first-of-type > div > img, body.rythmritje section.process > div:last-of-type > div > img{
+body.detail section:first-of-type div:last-of-type div img, 
+body.detail section.process > div:first-of-type > div > img, body.detail section.process > div:last-of-type > div > img{
     max-width: 40vw;
     border-radius: 3em 5em;
     margin-right: 1em;
+    object-fit: cover;
+}
+
+body.detail section.a11y{
+    background: #FFE6AC url(../img/achtergrond-a11y.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.detail section.a11y > div:last-of-type{
+    margin-top: 0;
+    padding-top: 0;
+    background: none;
 }
 
 /*rythm ritje sectie 2, solution css*/
 
-body.rythmritje section.solution{
+body.detail section.solution{
     background-color: #9CE2ED;
     display: flex;
     flex-direction: column;
     padding: 0 5vw;
 }
 
-body.rythmritje section.solution span div{
-    width: 100vw;
+body.detail section:nth-of-type(3){
+    background: #FF873E;
+}
+
+body.detail section.solution div{
     margin: 1em 0 0 -5vw;
     padding: 0 5vw 1em 5vw;
     display: flex;
     flex-direction: column;
 }
 
-body.rythmritje section.solution span div img{
+body.detail section.solution div img{
     max-width: 100vw;
 }
 
 /*rythm ritje sectie 3, before and after situation css*/
 
-body.rythmritje section.before_after {
+body.detail section.before_after {
     background: #FF873E
 }
 
-body.rythmritje section.before_after img{
+body.detail section.before_after img{
     max-width: 90vw;
     border-radius: 10em 5em;
 }
 
 /*rythm ritje sectiones 4, proces css*/
-body.rythmritje section.process{
+body.detail section.process{
     background-color: #FFE6AC;
 }
 
-body.rythmritje section.process > div > div:last-of-type{
+body.detail section.process > div > div:last-of-type{
     display: flex;
     flex-direction: row;
 }
 
-body.rythmritje section.process > div > div:first-of-type{
+body.detail section.process > div > div:first-of-type{
     display: flex;
     flex-direction: column;
 }
 
-body.rythmritje section.process div:nth-of-type(2) img{
+body.detail section.process div:nth-of-type(1)> img, body.detail section.process div:nth-of-type(2)> img, body.detail section.process div:nth-of-type(3)> img{
     max-width: 90vw;
+    max-height: 55vh;
+    border-radius: 3em 7em;
 }
 
 /*section cinqoooo, appscreens*/
 
-body.rythmritje section.appscreens{
+body.detail section.endwork{
     background: #FF873E;
 }
 
@@ -378,9 +431,14 @@ footer a{
         max-width: 65ch;
     }
 
-    iframe{
+    iframe.video{
         width: 40vw;
         height: 40vh;
+    }
+
+    iframe.pdf{
+        width: 80vw;
+        height: 70vh;
     }
 
     /*header css*/
@@ -406,8 +464,10 @@ footer a{
         width: 100%;
     }
 
-    body section#top div:last-of-type{
+    body section#top > div:last-of-type{
         width: 50vw;
+        display: flex;
+        justify-content: space-around;
     }
 
     body section#aboutme span{
@@ -465,97 +525,117 @@ footer a{
 
     /*rythm ritje css*/  
     /*eerste section*/  
-    body.rythmritje main section:first-of-type > img{
+    body.detail main section:first-of-type > img{
         max-width: 40vw;
         position: relative;
         top: 7vh;
         left: 50vw;
     }
 
-    body.rythmritje main section:first-of-type > div:first-of-type{
+    body.detail main section:first-of-type > div:first-of-type{
         justify-content: flex-start;
     }
 
-    body.rythmritje main section:first-of-type > div:last-of-type{
+    body.detail main section:first-of-type > div:last-of-type{
         flex-direction: row;
         justify-content: flex-start;
     }
 
-    body.rythmritje main > section:first-of-type > div:last-of-type > div:last-of-type > img{
+    body.detail main > section:first-of-type > div:last-of-type > div:last-of-type > img{
         max-width: 20vw;
         max-height: 40vh;
-        margin: 0 0 0 2em;
+        margin-left: 1em;
+        object-fit: cover;
+    }
+
+    body.detail main > section:first-of-type > div:last-of-type > div:last-of-type > img:first-of-type{
+        max-width: 20vw;
+        max-height: 40vh;
+        margin: 0 0 0 5vw;
+        object-fit: cover;
     }
 
     /*section 2, de oplossing*/
-    body.rythmritje section.solution{
+    body.detail section.solution{
         display: flex;
         flex-direction: row;
         padding: 2em 5vw 0 5vw;
     }
 
-    body.rythmritje section.solution div{
+    body.detail section.solution div{
         padding-right: 5vw;
     }
 
-    body.rythmritje section.solution img{
+    body.detail section.solution img{
         max-width: 40vw;
+        object-fit: cover;
+    }
+    
+    body.detail section.solution img.custom-img, body.detail section.solution img.custom-img-2{
+        max-width: 30vw;
+        max-height: 50vh;
+        object-fit: cover;
     }
 
     /*sectiones threeee*/
-    body.rythmritje section.before_after span{
+    body.detail section.before_after span{
         display: flex;
         flex-direction: row;
     }
 
-    body.rythmritje section.before_after span div{
+    body.detail section.before_after span div{
         margin-right: 2em;
     }
 
-    body.rythmritje section.before_after span div img{
+    body.detail section.before_after span div img{
         max-width: 25vw;
         border-radius: 6em 4em;
+        object-fit: cover;
     }
 
     /*section 3, processsss*/
 
-    body.rythmritje section.process > div{
+    body.detail section.process > div{
         display: flex;
         flex-direction: row;
     }
 
-    body.rythmritje section.process > div > div:last-of-type > img{
+    body.detail section.process > div > div:last-of-type > img{
         max-width: 15vw;
         margin-left: 2em;
+        object-fit: cover;
     }
 
-    body.rythmritje section.process div:nth-of-type(2) img{
+    body.detail section.process div:nth-of-type(1) img, body.detail section.process div:nth-of-type(2) img, body.detail section.process div:nth-of-type(3) img{
        max-width: 40vw;
+       max-height: 40vh;
+       object-fit: cover;
+       margin-left: 5vw;
     }
 
     /*sectiones 4 over appscreensss*/
-    body.rythmritje section.appscreens{
+    body.detail section.endwork{
         display: flex;
         flex-direction: column;
     }
 
-    body.rythmritje section.appscreens >div{
+    body.detail section.endwork >div{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
     }
 
-    body.rythmritje section.appscreens > div >span{
+    body.detail section.endwork > div >span{
         margin-right: 1em;
     }
 
     /*ander werk*/
-    body.rythmritje section#mywork span, body.a11y section#mywork span, body.carddeck section#mywork span{
+    body.detail section#mywork span, body.a11y section#mywork span, body.carddeck section#mywork span{
         display: flex;
         justify-content: flex-start;
     }
 
-    body.rythmritje section#mywork span a, body.a11y section#mywork span a, body.carddeck section#mywork span a{
+    body.detail section#mywork span a, body.a11y section#mywork span a, body.carddeck section#mywork span a{
         margin-right: 2em;
     }
 }
