@@ -316,7 +316,7 @@ body.detail section.process > div:first-of-type > div > img, body.detail section
 }
 
 body.detail section.a11y{
-    background: #FFE6AC url(../img/achtergrond-a11y.png);
+    background: #FEF7F3 url(../img/achtergrond-a11y.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
