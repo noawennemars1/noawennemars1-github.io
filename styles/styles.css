@@ -106,6 +106,10 @@ section{
     padding: 1em 5vw;
 }
 
+iframe{
+    margin-top: 1em;
+}
+
 iframe.video{
     width: 90vw;
     height: 23vh;
@@ -114,6 +118,7 @@ iframe.video{
 iframe.pdf{
     width: 90vw;
     height: 50vh;
+    margin-top: 1em;
 }
 
 img.custom-img{
@@ -429,6 +434,10 @@ footer a{
 
     p{
         max-width: 65ch;
+    }
+
+    iframe{
+        margin-top: 1em;
     }
 
     iframe.video{
