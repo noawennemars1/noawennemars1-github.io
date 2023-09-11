@@ -193,6 +193,20 @@ body section:first-of-type > div{
     justify-content: flex-start;
 }
 
+body section#top div{
+    width: 90vw;
+}
+
+body section#top span{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body section#top img{
+    max-width: 70vw;
+}
+
 /*section 2, about me css*/
 body section#aboutme{
     width: 100vw;
@@ -466,10 +480,15 @@ footer a{
         width: 100%;
     }
 
+    body section#top div{
+        width: 30vw;
+    }
+
     body section#top > span{
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
+        align-items: flex-start;
         width: 100%;
     }
 
@@ -477,6 +496,10 @@ footer a{
         width: 50vw;
         display: flex;
         justify-content: space-around;
+    }
+
+    body section#top img{
+        max-height: 45vh;
     }
 
     body section#aboutme span{
