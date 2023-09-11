@@ -465,23 +465,23 @@ footer a{
 
     /*rythm ritje css*/  
     /*eerste section*/  
-    body.rythmritje section:first-of-type > img{
+    body.rythmritje main section:first-of-type > img{
         max-width: 40vw;
         position: relative;
         top: 7vh;
         left: 50vw;
     }
 
-    body.rythmritje section:first-of-type > div:first-of-type{
+    body.rythmritje main section:first-of-type > div:first-of-type{
         justify-content: flex-start;
     }
 
-    body.rythmritje section:first-of-type > div:last-of-type{
+    body.rythmritje main section:first-of-type > div:last-of-type{
         flex-direction: row;
         justify-content: flex-start;
     }
 
-    body.rythmritje > section:first-of-type > div:last-of-type > div:last-of-type > img{
+    body.rythmritje main > section:first-of-type > div:last-of-type > div:last-of-type > img{
         max-width: 20vw;
         max-height: 40vh;
         margin: 0 0 0 2em;
