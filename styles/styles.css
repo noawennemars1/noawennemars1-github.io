@@ -321,6 +321,10 @@ body.detail section:first-of-type > div:last-of-type{
     padding: 5em 5vw 1em 5vw;
 }
 
+body.detail main section.carddeck >div:last-of-type{
+    padding-top: 6em;
+}
+
 body.detail section:first-of-type div:last-of-type div:last-of-type{
     display: flex;
     flex-direction: row;
@@ -345,6 +349,12 @@ body.detail section.a11y > div:last-of-type{
     margin-top: 0;
     padding-top: 0;
     background: none;
+}
+
+body.detail section.carddeck{
+    background: #86B8FD url(../img/achtergrond-carddeck.png);
+    background-repeat: repeat-x;
+    background-size: contain;
 }
 
 /*rythm ritje sectie 2, solution css*/
@@ -572,6 +582,12 @@ footer a{
     body.detail main section:first-of-type > div:last-of-type{
         flex-direction: row;
         justify-content: flex-start;
+    }
+
+    body.detail main section.carddeck >div:last-of-type{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 2em;
     }
 
     body.detail main > section:first-of-type > div:last-of-type > div:last-of-type > img{
