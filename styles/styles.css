@@ -49,21 +49,21 @@ a{
 }
 
 a.link{
-    background: linear-gradient(#86B8FD 0%, #86B8FD 100%); 
+    background: linear-gradient(#CEE1FB 0%, #CEE1FB 100%); 
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 1em 0.3em;
     color: #000;
     text-decoration: none;
+    transition: background-size .2s cubic-bezier(0,1,.35,1);
 }
 
 a.link:hover{
     background-size: 1em 1.2em;    
-    transition: background-size .2s;
 }
 
 a.button{
-    background-color:#FF873E;
+    background-color:#F47D57;
     min-width: 7em;
 }
 
@@ -211,7 +211,7 @@ body section#top img{
 /*section 2, about me css*/
 body section#aboutme{
     width: 100vw;
-    background: #FF873E;
+    background: #F47D57;
     display: flex;
     flex-direction: column;
 }
@@ -234,7 +234,7 @@ body section#aboutme span img{
 
 /*section 3, my work css*/
 body section#mywork{
-    background: #86B8FD;
+    background: #CEE1FB;
 }
 
 body section#mywork a{
@@ -340,7 +340,7 @@ body.detail section.process > div:first-of-type > div > img, body.detail section
 }
 
 body.detail section.a11y{
-    background: #FEF7F3 url(../img/achtergrond-a11y.png);
+    background: #CEE1FB url(../img/achtergrond-a11y.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -352,7 +352,7 @@ body.detail section.a11y > div:last-of-type{
 }
 
 body.detail section.carddeck{
-    background: #86B8FD url(../img/achtergrond-carddeck.png);
+    background: #CEE1FB url(../img/achtergrond-carddeck.png);
     background-repeat: repeat-x;
     background-size: contain;
 }
@@ -367,7 +367,7 @@ body.detail section.solution{
 }
 
 body.detail section:nth-of-type(3){
-    background: #FF873E;
+    background: #F47D57;
 }
 
 body.detail section.solution div{
@@ -384,7 +384,7 @@ body.detail section.solution div img{
 /*rythm ritje sectie 3, before and after situation css*/
 
 body.detail section.before_after {
-    background: #FF873E
+    background: #F47D57
 }
 
 body.detail section.before_after img{
@@ -416,7 +416,7 @@ body.detail section.process div:nth-of-type(1)> img, body.detail section.process
 /*section cinqoooo, appscreens*/
 
 body.detail section.endwork{
-    background: #FF873E;
+    background: #F47D57;
 }
 
 /*footer css*/
