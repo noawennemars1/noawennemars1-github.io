@@ -72,6 +72,10 @@ a{
     color: var(--Magnolia, #F8F2FF);
 }
 
+a.link-dark{
+    color: var(--Midnight-Violet, #0E002D);
+}
+
 a.light-link{
     color: var(--Morning-blues, #5115D5);
     background: linear-gradient(#5115D5 0%, #5115D5 100%); 
@@ -87,7 +91,7 @@ a.light-link:hover{
     color: var(--Magnolia, #F8F2FF);
 }
 
-a.link{
+a.link, a.link-dark{
     background: linear-gradient(#D0BAFF 0%, #D0BAFF 100%); 
     background-position: 0 100%;
     background-repeat: repeat-x;
@@ -96,7 +100,7 @@ a.link{
     transition: background-size .2s cubic-bezier(0,1,.35,1);
 }
 
-a.link:hover{
+a.link:hover, a.link-dark:hover{
     background-size: 1em 1.4em;    
     color:#0E002D;
 }
@@ -151,7 +155,7 @@ img{
 }
   
 .toZoom:hover {
-    transform: scale(0.95);
+    transform: scale(1.01);
 }
   
 .modal {
