@@ -455,7 +455,8 @@ body.detail main > a{
 }
 
 body.detail main section ol{
-    margin: 0 0 0.5em 0;;
+    margin: 0 0 0.5em 0;
+    display: inline;
 }
 
 body.detail main section ol li{
@@ -490,7 +491,6 @@ body.detail main section.otherwork a > div{
     border-radius: 2em;
     padding: 1em;       
     transition: .2s cubic-bezier(0,1,.35,1);
-    width: 29vw;
     height: 25em;
     display: flex;
     justify-content: flex-start;
@@ -508,10 +508,6 @@ body.detail main section.otherwork a > div:hover{
 body.detail main section.otherwork a > div > h3, body.detail main section.otherwork a > div > h4, body.detail main section.otherwork a > div > p{
     color: var(--Midnight-Violet, #0E002D);
     width: 100%;
-}
-
-body.detail main section.otherwork a div img{
-    max-width: 20vw;
 }
 
 /*footerrr yes yes*/
@@ -637,6 +633,7 @@ footer{
         justify-content: space-between;
         flex-wrap: wrap;
         width: 60vw;
+        margin-bottom: 5em;
     }
 
     main section#mywork section a div{
@@ -647,8 +644,8 @@ footer{
         align-items: center;
     }
 
-    main section#mywork section a:nth-of-type(2){
-        transform: translateY(50%);
+    main section#mywork section a:nth-of-type(2), main section#mywork section a:nth-of-type(4){
+        transform: translateY(25%);
     }
 
     main section#mywork section a div{
@@ -842,6 +839,22 @@ footer{
         align-items: center;
     }
 
+    body.detail main section.otherwork a > div{
+        flex-direction: column;
+        background: var(--Magnolia, #F8F2FF);
+        border-radius: 2em;
+        padding: 1em;       
+        transition: .2s cubic-bezier(0,1,.35,1);
+        width: 29vw;
+        height: 25em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    body.detail main section.otherwork a div img{
+        max-width: 20vw;
+    }
 
     /*foootttaaah*/
     footer > p{
