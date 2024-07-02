@@ -254,7 +254,7 @@ header > nav > ol > li a{
     background: linear-gradient(#D0BAFF 0%, #D0BAFF 100%); 
     background-position: 0 100%;
     background-repeat: repeat-x;
-    background-size: 1em 0.15em;
+    background-size: 1em 0em;
     text-decoration: none;
     transition: background-size .2s cubic-bezier(0,1,.35,1);
 }
@@ -310,8 +310,12 @@ main section#mywork section a div{
     flex-direction: column;
     border-radius: 2em;
     padding: 0.75em 1em;
-    background-color: var(--Midnight-Violet, #0E002D);
+    background-color: var(--Magnolia, #F8F2FF);
     width: 92vw;
+}
+
+main section#mywork section a div h2, main section#mywork section a div h3, main section#mywork section a div h4, main section#mywork section a div p{
+    color: var(--Midnight-Violet, #0E002D);
 }
 
 main section#mywork section a div img{
@@ -598,7 +602,7 @@ footer{
 
     /*top sectie yassss*/
     main section#top{
-        padding: 5em 20vw 2em;
+        padding: 10em 20vw 7em;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -616,8 +620,8 @@ footer{
     }
 
     main section#top img{
-        max-width: 20em;
-        margin: 0 2em 0 0;
+        max-width: 18em;
+        margin: 0 4em 0 0;
     }
 
     /*work it sectiooooon*/
@@ -658,7 +662,7 @@ footer{
 
     main section#mywork section a div:hover,   main section#mywork section a div:nth-of-type(2) :hover{
         transform: scale(1.01);
-        background: url(../img/dark-tegel-background.png) var(--Midnight-Violet, #0E002D);
+        background: url(../img/light-tegel-background.png) var(--Magnolia, #F8F2FF);
         background-size: 200%;
         background-position: center;
         background-repeat: no-repeat;
