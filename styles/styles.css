@@ -523,6 +523,10 @@ footer{
     justify-content: center;
 }
 
+footer >p:last-of-type{
+    margin-top: 2em;
+}
+
 @media (min-width: 801px) {
     /*algemene css*/
     h1{
