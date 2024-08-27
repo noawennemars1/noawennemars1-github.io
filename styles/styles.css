@@ -258,6 +258,11 @@ header > nav > ol > li a{
     text-decoration: none;
     transition: background-size .2s cubic-bezier(0,1,.35,1);
 }
+
+header > nav > ol > li a:last-of-type{
+    margin-right: 0;
+}
+
 header > nav > ol > li a:hover{
     background-size: 1.2em 1.4em;
     color: #0E002D;
@@ -301,7 +306,7 @@ main section#mywork > section{
 }
 
 main > section#mywork section a:nth-of-type(1), main > section#mywork section a:nth-of-type(2), main > section#mywork section a:nth-of-type(3){
-    margin: 0 0 1em 0;
+    margin: 0 0 3em 0;
 }
 
 main section#mywork section a div{
@@ -558,6 +563,7 @@ footer >p:last-of-type{
         font-size: 1rem;
         display: flex;
         flex-direction: column;
+        margin-bottom: 1em;
     }
     
     a.button-dark, a.button-light{
