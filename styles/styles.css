@@ -314,7 +314,7 @@ main section#mywork section a div{
     justify-content: flex-start;
     flex-direction: column;
     border-radius: 2em;
-    padding: 0.75em 1em;
+    padding: 1.3em;
     background-color: var(--Magnolia, #F8F2FF);
     width: 92vw;
 }
@@ -347,10 +347,6 @@ main section#aboutme section{
     display: flex;
     flex-direction: column;
     margin: 1em 0 0 0;
-}
-
-main section#aboutme section > p:first-of-type{
-    margin: 0 0 1.7em 0;
 }
 
 main section#aboutme section > p{
@@ -652,7 +648,6 @@ footer >p:last-of-type{
 
     main section#mywork section a div{
         width: 29vw;
-        height: 25em;
         display: flex;
         justify-content: flex-start;
         align-items: center;
